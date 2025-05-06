@@ -41,12 +41,12 @@ class _BookingScreenState extends State<BookingScreen> {
                     bottomLeft: Radius.circular(30),
                     bottomRight: Radius.circular(30)),
               ),
-              child: Padding(
-                padding: const EdgeInsets.only(top: 38, left: 18, right: 18),
+              child: const Padding(
+                padding: EdgeInsets.only(top: 38, left: 18, right: 18),
                 child: Column(
                   children: [
                     Row(
-                      children: const [
+                      children: [
                         Spacer(),
                         Text(
                           "Book Your Appointment",
@@ -59,7 +59,7 @@ class _BookingScreenState extends State<BookingScreen> {
                         Spacer(),
                       ],
                     ),
-                    const CustomDatePicker(),
+                    CustomDatePicker(),
                   ],
                 ),
               ),
@@ -112,9 +112,9 @@ class _BookingScreenState extends State<BookingScreen> {
                       ),
                     ],
                   ),
-                  ChipWrapper(),
-                  ChipWrapper(),
-                  ChipWrapper(),
+                  const ChipWrapper(),
+                  const ChipWrapper(),
+                  const ChipWrapper(),
                   const SizedBox(
                     height: 10,
                   ),

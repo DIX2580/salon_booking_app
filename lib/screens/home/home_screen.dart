@@ -42,8 +42,8 @@ class HomeScreen extends StatelessWidget {
                           const EdgeInsets.only(top: 38, left: 18, right: 18),
                       child: Column(
                         children: [
-                          Row(
-                            children: const [
+                          const Row(
+                            children: [
                               Icon(
                                 CupertinoIcons.location_solid,
                                 color: Colors.white,
@@ -123,8 +123,8 @@ class HomeScreen extends StatelessWidget {
               padding: const EdgeInsets.only(left: 18, top: 16),
               child: Column(
                 children: [
-                  Row(
-                    children: const [
+                  const Row(
+                    children: [
                       Text(
                         "Best Specialists",
                         style: TextStyle(
@@ -191,7 +191,8 @@ class HomeScreen extends StatelessWidget {
                                       height: 22,
                                       child: Text(
                                         snapshot.data?.docs[index]["name"],
-                                        style: const TextStyle(color: Colors.white),
+                                        style: const TextStyle(
+                                            color: Colors.white),
                                         textAlign: TextAlign.center,
                                       ),
                                     )),
@@ -219,14 +220,14 @@ class HomeScreen extends StatelessWidget {
                 ),
               ),
             ),
-            Padding(
-              padding: const EdgeInsets.only(
-                  top: 12, right: 18, left: 18, bottom: 20),
+            const Padding(
+              padding:
+                  EdgeInsets.only(top: 12, right: 18, left: 18, bottom: 20),
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Column(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.south_america_outlined,
                         size: 28,
@@ -242,7 +243,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   Column(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.discount,
                         size: 28,
@@ -258,7 +259,7 @@ class HomeScreen extends StatelessWidget {
                     ],
                   ),
                   Column(
-                    children: const [
+                    children: [
                       Icon(
                         Icons.phone_in_talk_sharp,
                         size: 28,
@@ -290,10 +291,10 @@ class HorizontalText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Padding(
-      padding: const EdgeInsets.only(left: 18, right: 18, bottom: 12),
+    return const Padding(
+      padding: EdgeInsets.only(left: 18, right: 18, bottom: 12),
       child: Row(
-        children: const [
+        children: [
           Text(
             "Best Services",
             style: TextStyle(

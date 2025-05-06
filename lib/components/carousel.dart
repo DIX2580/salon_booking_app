@@ -28,9 +28,9 @@ class Carousel extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Spacer(
                     flex: 2,
                   ),
@@ -72,7 +72,6 @@ class Carousel extends StatelessWidget {
             ],
           ),
         ),
-
         Container(
           height: 40,
           width: 400,
@@ -91,9 +90,9 @@ class Carousel extends StatelessWidget {
           ),
           child: Row(
             children: [
-              Column(
+              const Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
-                children: const [
+                children: [
                   Spacer(
                     flex: 2,
                   ),
@@ -136,7 +135,6 @@ class Carousel extends StatelessWidget {
             ],
           ),
         ),
-
       ],
       options: CarouselOptions(
         //autoPlayInterval: Duration(minutes: 1),
